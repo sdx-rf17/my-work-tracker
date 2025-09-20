@@ -1,0 +1,117 @@
+.light-mode {
+  --bg-color: #f0f4f8;
+  --text-color: #111;
+  --container-bg: #ffffff;
+  --hero-bg: #1e90ff;
+  --btn-bg: #1e90ff;
+  --btn-hover-bg: #0077cc;
+  --input-bg: #fff;
+}
+
+.dark-mode {
+  --bg-color: #1e1e2f;
+  --text-color: #f0f0f0;
+  --container-bg: #2a2a3d;
+  --hero-bg: #292947;
+  --btn-bg: #3f51b5;
+  --btn-hover-bg: #5c6bc0;
+  --input-bg: #3a3a50;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hero header */
+.hero {
+  background-color: var(--hero-bg);
+  color: var(--text-color);
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: var(--container-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: var(--input-bg);
+  padding: 15px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.01);
+  background-color: var(--btn-hover-bg);
+  color: white;
+}
