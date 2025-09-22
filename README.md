@@ -189,7 +189,7 @@ Licensed under the [MIT License](LICENSE).
 
 ## 🙋‍♂️ Author
 
-**sadeex** – [@sadeex](https://github.com/sdx-rf17)
+**sdx-rf17** – [@sdx-rf17](https://github.com/sdx-rf17)
 
 ---
 
